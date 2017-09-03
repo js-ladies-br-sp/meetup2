@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>JS LADIES</title>
+    <style type="text/css">
+      #cumprimento {
+        font-size: 20px
+      }
+      .nome {
+        color: red;
+      }
+    </style>
+    <script src="https://unpkg.com/react@latest/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@latest/dist/react-dom.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+    ReactDOM.render(
+      React.DOM.h1(
+        null,
+        React.DOM.em({id: "cumprimento"}, "Olá, "),
+        React.DOM.strong({className: "nome"}, "Camila!")
+      ),
+      document.getElementById('root')
+    );
+    </script>
+  </body>
+</html>
